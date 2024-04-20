@@ -7,6 +7,7 @@ format:
 	black *.py app/*.py
 lint:
 	#flake8 or #pylint
+	pylint --disable=R,C *.py app/*.py
 test:
 	#test
 deploy:

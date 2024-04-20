@@ -9,3 +9,4 @@ Building a fast api microservices and deploying the application using github act
 1. Create a Python Virtual Environment `python3 -m venv ~/.venv` or `virtualenv ~/.venv`  and Activate source venv with command `source .venv/bin/activate`
 2. Create scaffold empty files: `Makefile`, `requirements.txt`, `main.py`, `Dockerfile`, `app/__init__.py` and `app/core.py`
 3. Populate `Makefile`
+4. Steps added for Continious Integration(github workflows) i.e code formatting, lint errors
