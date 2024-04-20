@@ -1,3 +1,5 @@
+[![Python Fast API application with Github Actions](https://github.com/singhakky03/fastapi-devops/actions/workflows/pipeline.yml/badge.svg)](https://github.com/singhakky03/fastapi-devops/actions/workflows/pipeline.yml)
+
 # fastapi-devops
 Building a fast api microservices and deploying the application using github actions and aws codebuild
 
