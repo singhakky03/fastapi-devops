@@ -8,8 +8,11 @@ format:
 lint:
 	#flake8 or #pylint
 	pylint --disable=R,C *.py app/*.py
-test:
+run_test:
 	#test
+	python -m pytest -vv --cov=app testcases/*.py
+build:
+	# Build container
 deploy:
 	#deploy
 all: install lint test deploy
