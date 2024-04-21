@@ -14,6 +14,7 @@ run_test:
 	python -m pytest -vv --cov=app --cov=main testcases/*.py
 build:
 	# Build container
+	docker build -t deploy-fastapi .
 deploy:
 	#deploy
 all: install lint test deploy
