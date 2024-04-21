@@ -15,6 +15,9 @@ run_test:
 build:
 	# Build container
 	docker build -t deploy-fastapi .
+run:
+	#run docker
+	docker run -p 127.0.0.1:8080:8080 ec4ce3a1d25f
 deploy:
 	#deploy
-all: install lint test deploy
+all: install lint run_test build run deploy
