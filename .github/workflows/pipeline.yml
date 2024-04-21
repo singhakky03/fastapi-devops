@@ -26,3 +26,6 @@ jobs:
       - name: Build Container
         run: |
           make build
+      - name: Deploy App
+        run: | 
+          make deploy
