@@ -8,10 +8,10 @@ format:
 	black *.py app/*.py
 lint:
 	#flake8 or #pylint
-	pylint --disable=R,C *.py app/*.py
+	pylint --disable=R,C *.py app/*.py testcases/*.py
 run_test:
 	#test
-	python -m pytest -vv --cov=app testcases/*.py
+	python -m pytest -vv --cov=app --cov=main testcases/*.py
 build:
 	# Build container
 deploy:
