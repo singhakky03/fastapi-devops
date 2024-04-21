@@ -11,3 +11,4 @@ Building a fast api microservices and deploying the application using github act
 3. Populate `Makefile`
 4. Steps added for Continious Integration(github workflows) i.e code formatting, lint errors
 5. Build CLI tool using python fire library `./cli-fire.py --help` to test wiki logic
+6. Add Fast API and uvicorn library in `requirement.txt` and api logic in `main.py`
