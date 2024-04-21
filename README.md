@@ -10,3 +10,4 @@ Building a fast api microservices and deploying the application using github act
 2. Create scaffold empty files: `Makefile`, `requirements.txt`, `main.py`, `Dockerfile`, `app/__init__.py` and `app/core.py`
 3. Populate `Makefile`
 4. Steps added for Continious Integration(github workflows) i.e code formatting, lint errors
+5. Build CLI tool using python fire library `./cli-fire.py --help` to test wiki logic
