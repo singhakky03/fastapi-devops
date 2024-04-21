@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
-from app.core import wiki, wiki_search
+from app.core import wiki, wiki_search, wiki_phrases
 
 api = FastAPI()
 
@@ -23,6 +23,14 @@ async def wiki_page(name: str):
     """Retrive wiki page"""
 
     result = wiki(name)
+    return {"result": result}
+
+
+@api.get("/phrases/{name}")
+async def phrases(name: str):
+    """Retrive wiki page and return phrases"""
+
+    result = wiki_phrases(name)
     return {"result": result}
 
 
